@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML Lists</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../lesson.css">
+</head>
+<body>
+	<h1>HTML Lists</h1>
+	<p>HTML lists allow web developers to group a set of related items in lists.</p>
+	<div class="output">
+		<h1>Example</h1>
+		<div>
+		<p>An unordered HTML list:</p> <!-- MARKER -->
+		<ul>
+			<li>item</li>
+			<li>item</li>
+			<li>item</li>
+			<li>item</li>
+		</ul>
+		<p>An ordered HTML list</p> <!-- NUMBERS -->
+		<ol>
+			<li>First item</li>
+			<li>Second item</li>
+			<li>Third item</li>
+			<li>Fourth item</li>
+		</ol>
+		</div>
+	</div>
+
+	<h1>Unordered HTML List</h1>
+	<p>An unordered list starts with the <mark>&ltul&gt</mark> tag. Each list item starts with the <mark>&ltli&gt</mark> tag.</p>
+	<div class="output">
+		<h1>Example</h1>
+		<div>
+			<ul>
+				<li>Coffee</li>
+				<li>Tea</li>
+				<li>Milk</li>
+			</ul>
+		</div>
+	</div>
+	<h1>Choose List Item Marker</h1>
+	<p>The CSS <mark>list-style-type</mark> property is used to define the style of the list item marker. It can have one of the following values:</p>
+	<table>
+		<tr>
+			<th>Value</th>
+			<th>Description</th>
+		</tr>
+		<tr>
+			<td>disc</td>
+			<td>Sets the list marker to a bullet (default)</td>
+		</tr>
+		<tr>
+			<td>circle</td>
+			<td>Sets the list item marker to a circle</td>
+		</tr>
+		<tr>
+			<td>square</td>
+			<td>Sets the list item marker to a square</td>
+		</tr>
+		<tr>
+			<td>none</td>
+			<td>The list items will not be marked</td>
+		</tr>
+	</table>
+	<div class="output">
+		<h1>Example</h1>
+		<div>
+			<ul style="list-style-type: disc;">
+				<li>Coffee</li>
+				<li>Tea</li>
+				<li>Milk</li>
+			</ul>
+		</div>
+	</div>
+	<h1>Ordered HTML List</h1>
+	<p>An Ordered list starts with the <mark>&ltol&gt</mark> tag. Each list item starts with the <mark>&ltli&gt</mark> tag.</p>
+	<div class="output">
+		<h1>Example</h1>
+		<div>
+			<ol> <!--  type="I" start="5" -->                                                                                         
+				<li>Coffee</li>
+				<li>Tea</li>
+				<li>Milk</li>
+			</ol>
+		</div>
+	</div>
+	
+	<h1>HTML Description Lists</h1>
+	<p>HTML also supports description lists.</p>
+	<p>A description list is a list of terms with a description of each term.</p>
+	<p>The <mark>&ltdl&gt</mark> tag defines the description list, the <mark>&ltdt&gt</mark> tag defines the term (name), the <mark>&ltdd&gt</mark> tag defines each term.</p>
+	<div class="output">
+		<h1>Example</h1>
+		<div>
+			<dl>
+				<dt>Coffee</dt>
+				<dd> - black and hot drink</dd>
+				<dt>Milk</dt>
+				<dd> - white and cold drink</dd>
+			</dl>
+		</div>
+	</div>
+</body>
+</html>

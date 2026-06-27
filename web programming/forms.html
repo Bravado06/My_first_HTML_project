@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <a href="main.css"></a>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMS</title>
+    <link rel="stylesheet" href="main.css"
+</head>
+<body id="main">
+    <h1>GET - IF NOT PRIVATE</h1>
+    <h1>POST - IF PRIVATE</h1>
+
+    <form action="#" method="POST" style="width: 500px;">
+        <fieldset>
+            <legend>Данные пользователя :</legend>
+            <label>Имя :
+                <input type="text"  name="name" size="30" maxlength="100" placeholder="Иван Иванов">
+                </label><br />
+        </fieldset>
+        <fieldset>
+            <legend>Ваше мнение :</legend>
+            <p>
+                <label for="hear-about"><label>Как вы узали о нас ?</label>
+                <select name="referrer" >
+                    <option value=" google" >Google</option>
+                    <option value=" friend" >От Друзей</option>
+                    <option value=" advert" >Реклама</option>
+                    <option value="social" >Соц. сеть</option>
+                    <option value="others" >Другое</option>
+                </select>
+            </p>
+
+            <p>
+                Поетители ваш наш сайтт снова?<br>
+                <label>
+                    <input type="radio" name="rating" value="yes">
+                    Да
+                </label>
+                <label>
+                    <input type="radio" name="rating" value="maybe">
+                    возможно
+                </label>
+                </p>
+                <p>
+                    <label for="comments" >Коментарий</label>
+                    <br>
+                    <textarea cols="40" rows="4" placeholder="Напиши те что то интереснего..." ></textarea>
+                </p>
+                <p>
+                    <label>
+                        <input type="checkbox" name="subscribe" checked="checked"/>
+                        Я хочу получать рассылку с новостями сайта
+                    </label></br>
+                </p>
+                <input type="submit">
+                <input type="reset">
+        </fieldset>
+    </form>
+    <br>
+
+    <form action="handle.php" method="post">
+        <!-- method -> Get::Post
+         POST :: $ PRIVATE DATA
+         GET  :: 4 PUBLIC DATA
+
+         echo $_POST['login'];
+         echo $_POST['parol'];
+    -->
+        <input type="text" name="placeholder="enter your nicknam"><br>
+        <input type="password" name="parol" id="parol"><br>
+        <label><input type="radio" name="color">RED</label><br>
+        <label><input type="radio" name="color">GREEN</label><br>
+        <label><input type="radio" name="color">BLUE</label><br>
+
+        <label><input type="checkbox" name="color">RED</label><br>
+        <label><input type="checkbox" name="color">GREEN</label><br>
+        <label><input type="checkbox" name="color">BLUE</label><br>
+
+        <input type="submit" value="Tassykla"><br>
+     </form>
+
+<br>
+     <div class="output">
+        <h1>User Form</h1>
+        <form method="GET" action="www.html">
+            <label for="fname">First name:</label>
+            <input type="text" name="fname" placeholder="Godek" required><br>
+
+            <label for="lname">last name:</label>
+            <input type="text" name="lname" placeholder="Godekow" required><br>
+
+            <label for="bday">Birth day:</label>
+            <input type="date" name="bday" placeholder="Birth day" required><br>
+
+            <label>Birth date: </label>
+            <select name="bday" id="Birth day">
+                <option value="-1">Day:</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+             </select>
+             <select name="bmonth" id="Birth_month">
+                <option value="-1">Month:</option>
+                <option value="January">January</option>
+                <option value="February">February</option>
+                <option value="March">March</option>
+                <option value="April">April</option>
+                <option value="May">May</option>
+                <option value="June">June</option>
+                <option value="July">July</option>
+                <option value="August">August</option>
+                <option value="September">September</option>
+                <option value="October">October</option>
+                <option value="November">November</option>
+                <option value="December">December</option>
+             </select>
+             <select name="byear" id="Birth_year">
+                <option value="-1">Year</option>
+                <option value="">2014</option>
+                <option value="">2013</option>
+                <option value="">2012</option>
+                <option value="">2011</option>
+                <option value="">2010</option>
+                <option value="">2009</option>
+                <option value="">2008</option>
+                <option value="">2007</option>
+                <option value="">2006</option>
+                <option value="">2005</option>
+                <option value="">2004</option>
+             </select>
+
+             <br>
+             <label for="gender">gender</label>
+             <input type="radio" name="gender" value="male">Male
+             <input type="radio" name="gender" value="female">Female
+
+             <br>
+
+             <label for="job">What do you do?</label>
+
+              <input list="jobs" name="job">
+              <details id="jobs">
+                <option value="DOctor">
+                <option value="Police">
+                <option value="Theacer">
+                <option value="Taxi Driver">
+                <option value="Fireman">
+              </details>
+
+              <br><br>
+              <input type="checkbox" name="policy">I agree with <a href="#">      Privacy Policy</a>
+              <br>
+
+              <label for="email">email:</label>
+              <input type="mail" name="email" required>
+              <br>
+              <label for="pass">Password:</label>
+              <input type="password" name="pass">
+              <br>
+              <label for="region">Region:</label>
+              <select name="region">
+              <option value="AG">Asghabat</option>
+              <option value="BN">Balkan</option>
+              <option value="MR">Mary</option>
+              <option value="LB">Lebap</option>
+              <option value="DZ" selected>Dashoguz</option>
+              </select>
+              <br>
+              <textarea cols="50" rows="4" placeholder="Write your comment"></textarea>
+              <br>
+              <input type="submit" value="SUBMIT">
+              <input type="Reset" value="RESET">
+
+              <br>
+              <label for="Region">Region:</label>
+              <select name="region" size="5" multiple>
+              <option value="AG">Asghabat</option>
+        </form>
+     </div>
+
+<h3>Notes on Get</h3>
+<ul>
+    <li>Appends the form  data to the URL, in name/value pairs</li>
+    <li>never use GET to send sensitive DATA</li>
+    <li>The length of a URL is limited (2048 characters)</li>
+    <li>Useful for form submissios where a user wantrs to bookmark the result</li>
+    <li>GEt is good for non-secure data, like query strings in Google</li>
+</ul>
+<h3>Notes on Post:</h3>
+<ul>
+    <li>Append the form Data inside the body of HTTP request (the submitted form data is not shown in the URL)</li>
+    <li>Post has no size limitations and can be used to send large amounts of data</li>
+    <li>Form submissions with POST cannot be bookmarked</li>
+</ul>
+</body>
+<script type="text/javascript">
+    const colors = document.getElementById('akyol');
+
+    function changeBackground(){
+        document.getElementById('main').style.background = colors.value;
+    }
+</script>
+</html>

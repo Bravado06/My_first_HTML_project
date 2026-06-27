@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tables</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../lesson.css">
+	<style type="text/css">
+		table, th, td{
+			border: 1px solid #000;
+			border-collapse: collapse;
+		}
+		td{
+			padding: 5px;
+		}
+	</style>
+</head>
+<body>
+	<h1>HTML Tables</h1>
+	<p>HTML tables allow web developers to arrange data into rows and columns.</p>
+	<table>
+		<thead>
+			<tr>
+				<th>Company</th>
+				<th>Contact</th>
+				<th>Country</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Alfreds Futterkiste</td>
+				<td>Maria Anders</td>
+				<td>Germany</td>
+			</tr>
+			<tr>
+				<td>Centro comercial Moctezuma</td>
+				<td>Francisco Chang</td>
+				<td>Mexico</td>
+			</tr>
+			<tr>
+				<td>Ernst Handel</td>
+				<td>Roland Mendel</td>
+				<td>Austria</td>
+			</tr>
+			<tr>
+				<td>Island Trading</td>
+				<td>Helen Bennett</td>
+				<td><abbr title="United Kingdom of Britain">UK</abbr></td>
+			</tr>
+			<tr>
+				<td>Laughing Bacchus Winecellars</td>
+				<td>Yoshi Tannamuri</td>
+				<td>Canada</td>
+			</tr>
+			<tr>
+				<td>Magazzini Alimentari Riunitti</td>
+				<td>Glovanni Rovelli</td>
+				<td>Italy</td>
+			</tr>
+		</tbody>
+
+	</table>
+
+	<h1>Define an HTML Table</h1>
+	<p>The <mark>&lttable&gt</mark> tag defines an HTML table.</p>
+	<p>Each table row is defined with a <mark>&lttr&gt</mark> tag.</p>
+	<p>Each table header is defined with a <mark>&ltth&gt</mark> tag.</p>
+	<p>Each table data/cell is defined with a <mark>&lttd&gt</mark> tag.</p>
+
+	<h1>HTML TABLE <mark>colspan</mark> and <mark>rowpsan</mark></h1>
+	<table>
+		<caption style="border: 1px solid #000;">
+			Information about Students
+		</caption>
+		<tr>
+			<th>#</th>
+			<th>STUDENT</th>
+			<th colspan="2">PHONE</th>
+			<th>Address</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>Babajanow Danyar</td>
+			<td>+99363 69-30-75</td>
+			<td>+99364 35-04-28</td>
+			<td rowspan="2">Garaşsyzlyk etraby, Hakykat geňeşligi</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>Babajanow Diyar</td>
+			<td>+99371 38-57-82</td>
+			<td>+99364 82-17-78</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>Taganow Atajan</td>
+			<td colspan="2">+99361 25-11-52</td>
+			<td>Daşoguz şäheri Alp-Arslan köçesi 29/1</td>
+		</tr>
+	</table>
+	
+</body>
+</html>

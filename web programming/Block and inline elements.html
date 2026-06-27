@@ -1,0 +1,164 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Block & Inline elements</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style type="text/css">
+		*{
+			
+			box-sizing: border-box;
+		}
+		body{ 
+			background-color: #458;
+			margin: 0; 
+		}
+		.wrapper{
+			padding: 25px 60px;
+			background-color: #405458;
+			color: #FFF;
+			font-family: sans-serif;
+			width: 750px;
+			margin: auto;
+		}
+		.navi{
+			position: sticky;
+			top: 0;
+		}
+		table{
+			width: 50%;
+		}
+		table, td{
+			border: 1px solid antiquewhite;
+			border-collapse: collapse;
+		}
+		td{
+			padding: 15px;
+			text-align: center;
+			color: orangered;
+			font-weight: bold;
+			font-family: monospace;
+			font-size: 20px;
+		}
+		kbd{
+			padding: 2px;
+			border-radius: 1px;
+			background-color: rgba(255, 0, 100, 0.2);
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<h1>HTML Block and Inline Elements</h1>
+		<p>Every HTML element has a default display value, depending on what type of element it is.</p>
+		
+		<p>The two most common display values are block and inline.</p>
+		<h2>Block-level Elements</h2>
+		<p>A block-level element always starts on a new line, and the browsers automatically add some space (a margin) before and after the element.</p>
+		<p>A block level element always takes up the full width available(streches out to the left and right as far as it can).</p>
+		<p>Here are the block-level elements in HTML:</p>
+		<table>
+			<tr>
+				<td>address</td>
+				<td>aside</td>
+				<td>canvas</td>
+				<td>div</td>
+				<td>figure</td>
+			</tr>
+			<tr>
+				<td>dt</td>
+				<td>figcaption</td>
+				<td>footer</td>
+				<td>h1-h6</td>
+				<td>form</td>
+			</tr>
+			<tr>
+				<td>hr</td>
+				<td>main</td>
+				<td>noscript</td>
+				<td>p</td>
+				<td>header</td>
+			</tr>
+			<tr>
+				<td>section</td>
+				<td>tfoot</td>
+				<td>video</td>
+				<td>article</td>
+				<td>li</td>
+			</tr>
+			<tr>
+				<td>blockquote</td>
+				<td>dd</td>
+				<td>dl</td>
+				<td>fieldset</td>
+				<td>nav</td>
+			</tr>
+			<tr>
+				<td>ol</td>
+				<td>pre</td>
+				<td>table</td>
+				<td>ul</td>
+				<td></td>
+			</tr>
+		</table>
+
+		<h2>Inline Elements</h2>
+		<p>An inline element does not start on a new line.</p>
+		<p>An inline element only takes up as much width as necessary.</p>
+		<p>This is <span style="border: 1px solid lightgreen; padding: 2px">a &ltspan&gt element inside</span> a paragraph.</p>
+		<p>Here are the inline elements in HTML</p>
+		<table>
+			<tr>
+				<td>a</td>
+				<td>acronym</td>
+				<td>bdo</td>
+				<td>br</td>
+				<td>abbr</td>
+				<td>b</td>
+			</tr>
+			<tr>
+				<td>big</td>
+				<td>button</td>
+				<td>cite</td>
+				<td>code</td>
+				<td>dfn</td>
+				<td>em</td>
+			</tr>
+			<tr>
+				<td>i</td>
+				<td>img</td>
+				<td>input</td>
+				<td>kbd</td>
+				<td>label</td>
+				<td>map</td>
+			</tr>
+			<tr>
+				<td>object</td>
+				<td>output</td>
+				<td>q</td>
+				<td>samp</td>
+				<td>script</td>
+				<td>select</td>
+			</tr>
+			<tr>
+				<td>small</td>
+				<td>span</td>
+				<td>strong</td>
+				<td>sub</td>
+				<td>sup</td>
+				<td>textarea</td>
+			</tr>
+			<tr>
+				<td>time</td>
+				<td>tt</td>
+				<td>var</td>
+				<td>s</td>
+				<td>del</td>
+				<td></td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>

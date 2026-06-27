@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Classes and ID</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../style.css">
+	<style type="text/css">
+		.city{
+			background: #fff;
+			text-align: center;
+			width: 400px;
+			height: 150px;
+			padding: 25px;
+			margin: 20px;
+			border-radius: 10px;
+			box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+			box-sizing: border-box;
+		}
+		.danger{
+			background: #ffb8b8;
+			color: #fb3c3c;
+		}
+		.warning{
+			background: #fff0a3;
+			color: #ad9100;
+		}
+		.success{
+			background: lightgreen;
+			color: darkgreen;
+		}
+
+		#red{ color: red; }
+		.green{ color: green; }
+		.btn{
+			width: 75px;
+			height: 75px;
+			border-radius: 50%;
+			background-image: linear-gradient(45deg, gray 45%, lightgray, gray 80%);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+			margin: 5rem;
+			font-size: 1rem;
+			cursor: pointer;
+			border: 1px inset #333;
+			transition: all .5s ease;
+			outline: 3px solid #233;
+			user-select: none;
+		}
+		.btn:hover{
+			border: 1px outset #333;
+			box-shadow: none;
+		}
+		.btn:active{ color: gold; }
+	</style>
+</head>
+<body>
+	<h1 id="tema">HTML class Attribute</h1>
+	<p>The HTML <b>class</b> attribute is used to specify a class for an HTML element.</p>
+	<p>Multiple HTML elements can share the same class.</p>
+
+	<button id="btn" onclick="toggleFunction()">HIDE CITIES</button>
+
+	<input type="submit" value="START">
+
+	<div class="btn">
+		ENGINE
+	</div>
+
+	<div class="city danger">
+		<h2>London</h2>
+		<p>London is the capital of England.</p>
+	</div>
+	
+	<div class="city warning danger">
+		<h2>Paris</h2>
+		<p>Paris is the capital of France.</p>
+	</div>
+	
+	<div class="city">
+		<h2>Tokyo</h2>
+		<p>Tokyo is the capital of Japan.</p>	
+	</div>
+
+	<div class="city success">
+		<h2>Dashoguz</h2>
+		<p>Dashoguz is the capital of North Turkmenistan</p>
+	</div>
+
+	<div class="city" id="red">
+		<h2>Ashgabat</h2>
+		<p>Ashgabat is a capital of Turkmenistan.</p>
+	</div>
+
+	<hr>
+
+	<h1>HTML id Attribute</h1>
+	<p>The HTML <b>id</b> attribute is used to specify a unique id for an HTML element.</p>
+	<p>YOU CANNOT HAVE MORE THAN ONE ELEMENT WITH THE SAME id IN AN HTML DOCUMENT.</p>
+
+	<p id="red" class="green">SOME TEXT</p>
+
+	<script type="text/javascript">
+		let flag = true;
+		function toggleFunction(){
+			if (flag) { 
+				hideCity(); 
+				flag = false;
+			} else { 
+				showCity(); 
+				flag=true;
+			}
+		}
+		function showCity(){
+			document.getElementById('btn').innerHTML = 'HIDE CITIES';
+			let cities = document.getElementsByClassName('city');
+			for (let i=0; i<cities.length; i++) {
+				cities[i].style.display = 'block';
+			}
+		}
+		function hideCity(){
+			document.getElementById('btn').innerHTML = "SHOW CITIES";
+			let cities = document.getElementsByClassName('city');
+			for (let i=0; i<cities.length; i++) {
+				cities[i].style.display = 'none';
+			}
+		}
+	</script>
+</body>
+</html>
