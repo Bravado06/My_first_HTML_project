@@ -1,0 +1,17 @@
+*{ font-family: sons-serif;
+	 }
+a{
+	text-decoration: none;
+	color; white;
+}
+div.output{
+	background: #345;
+	color: #def;
+	padding: 15px;
+}
+div.output div{
+	background: white;
+	color: #444;
+	padding: 15px;
+	border-radius: 10px;
+}
